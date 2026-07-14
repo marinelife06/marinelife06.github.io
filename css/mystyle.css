@@ -1,0 +1,332 @@
+@charset "utf-8";
+body {
+
+    background-color: #e0f7fa;
+
+    background-image: url("background.png");
+
+    background-repeat: repeat;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    color: #1a2061;
+
+    font-family: "Zen Maru Gothic", sans-serif;
+
+    line-height: 1.8;
+
+    margin: 20px;
+
+}
+
+ /*---------------- Header ----------------*/
+
+header{
+    position:relative;
+    background:#4fc3f7;
+    height:240px;
+    border-radius:20px;
+    padding:20px;
+    overflow:hidden;
+}
+
+/* ロゴ */
+
+.logo{
+    display:block;
+    width:360px;
+    height:auto;
+    margin:40px auto 20px auto;
+}
+
+/* ナビ */
+
+nav{
+     text-align:center;
+    margin:20px 0;
+}
+
+/* メニュー */
+
+.menu{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:0;
+    padding:0;
+}
+
+.menu li{
+    display:inline-block;
+    margin-left:15px;
+}
+
+.menu a{
+
+    display:block;
+
+    padding:15px 22px;
+
+    background:#ffffff;
+
+    border-radius:10px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#01579b;
+
+    text-decoration:none;
+
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+
+}
+
+.menu a:hover{
+
+    background:#0288d1;
+
+    color:white;
+
+}
+
+header::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.breadcrumb{
+
+    margin-bottom:20px;
+
+}
+
+.breadcrumb ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.breadcrumb li{
+
+    display:inline;
+
+    font-size:14px;
+
+}
+
+
+a{
+
+    text-decoration:none;
+
+}
+
+a:link{
+
+    color:#0277bd;
+
+}
+
+a:visited{
+
+    color:#7b1fa2;
+
+}
+
+a:hover{
+
+    color:#ff9800;
+
+    text-decoration:underline;
+
+}
+
+a:active{
+
+    color:red;
+
+}
+
+article{
+
+    text-align:center;
+
+}
+
+.content-box{
+
+    background-color:white;
+
+    width:80%;
+
+    margin:20px auto;
+
+    padding:20px;
+
+    border:3px solid #4fc3f7;
+
+    border-radius:20px;
+
+    box-shadow:3px 3px 10px #999999;
+
+}
+
+
+h1 {
+
+    font-size: 36px;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    color: #01579b;
+
+    text-shadow: 2px 2px 4px #90caf9;
+
+}
+
+h2 {
+
+    color: #0288d1;
+
+}
+
+p{
+
+    font-size:18px;
+
+}
+
+.highlight{
+
+    color:#d81b60;
+
+    font-weight:bold;
+
+}
+
+img{
+
+    max-width:100%;
+
+    border-radius:15px;
+
+}
+
+
+article img{
+    display:block;
+    margin:30px auto;
+}
+
+
+/* ---------- 水族館ページ ---------- */
+
+.leftphoto{
+
+    float:left;
+
+    margin-right:20px;
+
+    margin-bottom:10px;
+
+}
+
+.clear{
+
+    clear:both;
+
+}
+
+/* ---------- ランキング ---------- */
+
+ol{
+
+    display:inline-block;
+
+    text-align:left;
+
+}
+/* ---------- フッター ---------- */
+
+footer{
+
+    clear:both;
+
+    text-align:center;
+
+    background-color:#4fc3f7;
+
+    padding:15px;
+
+    margin-top:30px;
+
+    border-radius:15px;
+
+    font-size:14px;
+
+}
+
+/* ---------- レスポンシブ ---------- */
+
+ @media screen and (max-width:768px){
+
+    .content-box{
+
+        width:95%;
+
+    }
+
+    .menu li{
+
+        display:block;
+
+        margin:10px 0;
+
+    }
+
+    h1{
+
+        font-size:28px;
+
+    }
+
+    .leftphoto{
+
+        float:none;
+
+        display:block;
+
+        margin:0 auto 20px auto;
+
+    }
+ }
+    
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    header,
+    nav,
+    footer {
+        display: none;
+    }
+
+    .content-box {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+}
+
