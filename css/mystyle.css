@@ -3,7 +3,7 @@ body {
 
     background-color: #e0f7fa;
 
-    background-image: url("background.png");
+    background-image: url("../image/background.png");
 
     background-repeat: repeat;
 
@@ -280,37 +280,86 @@ footer{
 
  @media screen and (max-width:768px){
 
+    header{
+        height:auto;
+        padding:15px;
+    }
+
+    .logo{
+        width:220px;
+        margin:20px auto;
+    }
+
     .content-box{
-
         width:95%;
+        padding:15px;
+    }
 
+    .update-box{
+        width:95%;
+        padding:15px;
+    }
+
+    .menu{
+        flex-direction:column;
+        gap:10px;
     }
 
     .menu li{
+        margin:0;
+    }
 
-        display:block;
-
-        margin:10px 0;
-
+    .menu a{
+        font-size:18px;
+        padding:12px;
     }
 
     h1{
-
         font-size:28px;
+    }
 
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:16px;
     }
 
     .leftphoto{
-
         float:none;
-
         display:block;
-
-        margin:0 auto 20px auto;
-
+        margin:0 auto 20px;
+        width:100%;
+        max-width:350px;
     }
- }
+}
     
+.update-box{
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f0fbff;
+    border: 3px solid #4fc3f7;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.15);
+}
+
+.update-box h2{
+    color: #0288d1;
+    margin-top: 0;
+}
+
+.update-box a{
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.update-box a:hover{
+    text-decoration: underline;
+}
+
 @media print {
     body {
         background: white;
@@ -328,5 +377,31 @@ footer{
         border: none;
         box-shadow: none;
     }
+}
+
+.update-list{
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.update-list dt{
+    float: left;
+    width: 180px;
+    clear: left;
+
+    background: #bfe9ff;
+    color: #0077cc;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.update-list dd{
+    margin-left: 220px;
+    margin-bottom: 35px;
+    line-height: 1.8;
 }
 
